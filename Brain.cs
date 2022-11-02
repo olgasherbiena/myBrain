@@ -21,5 +21,13 @@ namespace Brain
     public class Brain
     {
       // клас буде потім наповнюватись, для пошуку він нам ще не потрібний
+        public struct parts
+        {
+            public Crown cr;
+            public Cerebellum cer;
+            public Forehead fr;
+            public Occiput occ;
+            public Temporal tmp;
+        }
     }
 }
