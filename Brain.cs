@@ -20,14 +20,18 @@ namespace Brain
     }
     public class Brain
     {
-      // клас буде потім наповнюватись, для пошуку він нам ще не потрібний
-        public struct parts
+        public struct parts // структура частин мозку (об'єктів їх класів)
         {
             public Crown cr;
             public Cerebellum cer;
             public Forehead fr;
             public Occiput occ;
             public Temporal tmp;
+        }
+        public parts[] brain; // масив структури для впорядкування даних
+        public Brain()
+        {
+        
         }
     }
 }
