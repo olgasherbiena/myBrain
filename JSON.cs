@@ -16,7 +16,7 @@ namespace Brain
             filenameSerialize = Serialize;
             filenameDeserialize = Deserialize;
         }
-        public void Serialize(string filenameSerialize, Occiput occ, Temporal tmp, Forehead forh, Cerebellum cer, Crown cr) { } // функція для запису в файл
-        public void Deserialize(string filenameDeserialize, Occiput occ, Temporal tmp, Forehead forh, Cerebellum cer, Crown cr) { } // функція для зчитування з файлу
+        public void Serialize(string filenameSerialize, Brain.parts[] brain) { } // функція для запису в файл
+        public void Deserialize(string filenameDeserialize, Brain.parts[] brain) { } // функція для зчитування з файлу
     }
 }
