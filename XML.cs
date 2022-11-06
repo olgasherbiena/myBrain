@@ -16,8 +16,7 @@ namespace Brain
             filenameLoad = Load;
             filenameUpload = Upload;
         }
-        public void ForLoad(string filenameLoad, Occiput occ, Temporal tmp, Forehead forh, Cerebellum cer, Crown cr) { } // функція для запису в файл
-        public void ForUpload(string filenameUpload, Occiput occ, Temporal tmp, Forehead forh, Cerebellum cer, Crown cr) { } // функція для 
-
+        public void ForLoad(string filenameLoad, Brain.parts[] brain) { } // функція для запису в файл
+        public void ForUpload(string filenameUpload, Brain.parts[] brain) { } // функція для зчитування з файлу 
     }
 }
