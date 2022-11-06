@@ -8,8 +8,7 @@ namespace Brain
 {
     public class Find
     {
-        public string find;
-        public void Find_information(string find_string, Occiput occ, Temporal tmp, Forehead forh, Cerebellum cer, Crown cr) { }
-        
+        public string find; // рядок по якому робтитимемо пошук
+        public void Find_information(string find_string, Brain.parts[] brain) { }  
     }
 }
