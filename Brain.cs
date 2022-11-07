@@ -28,7 +28,7 @@ namespace Brain
             public Occiput occ;
             public Temporal tmp;
         }
-        public parts[] brain; // масив структури для впорядкування даних
+        public parts brain; // масив структури для впорядкування даних
         public Brain()
         {
         
