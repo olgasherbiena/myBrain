@@ -31,7 +31,7 @@ namespace Brain
         public parts brain; // масив структури для впорядкування даних
         public Brain()
         {
-        
+            this.brain.cr.crown_part = "";
         }
     }
 }
