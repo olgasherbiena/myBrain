@@ -17,14 +17,14 @@ namespace Brain
         public Occiput()
         {
             id=102;
-            occiput = "";
-            inf_occ.structure = "";
-            inf_occ.latin = "";
-            inf_occ.functions="";
-            first_functional_area="";
-            ventral_flow="";
-            dorsomedial_flow="";
-            inf_occ.clinical_significance="";
+            occiput = "occ_part";
+            inf_occ.structure = "occ_struct";
+            inf_occ.latin = "occ_lat";
+            inf_occ.functions = "occ_func";
+            first_functional_area = "occ_1";
+            ventral_flow = "occ_2";
+            dorsomedial_flow = "occ_3";
+            inf_occ.clinical_significance = "occ_4";
 
         }
         public void Print(string str) { }

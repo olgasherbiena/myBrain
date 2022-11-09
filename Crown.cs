@@ -18,15 +18,15 @@ namespace Brain
         public Crown()
         {
             id=110;
-            crown_part = "";
-            inf_crw.structure = "";
-            inf_crw.latin = "";
-            inf_crw.functions = "";
-            lateral_intraparietal_area = "";
-            ventral_intraparietal_area = "";
-            medial_intraparietal_area = "";
-            front_intraparietal_area = "";
-            inf_crw.clinical_significance = "";
+            crown_part = "crw_part";
+            inf_crw.structure = "crw_struct";
+            inf_crw.latin = "crw_lat";
+            inf_crw.functions = "crw_func";
+            lateral_intraparietal_area = "crw_1";
+            ventral_intraparietal_area = "crw_2";
+            medial_intraparietal_area = "crw_3";
+            front_intraparietal_area = "crw_4";
+            inf_crw.clinical_significance = "crw_clinic";
         }
         public void Print(string str) { }
         public void Print_all_information() { }

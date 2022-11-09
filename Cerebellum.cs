@@ -14,11 +14,11 @@ namespace Brain
         public Cerebellum()
         {
             id=101;
-            cerebellum = "";
-            inf_crb.structure = "";
-            inf_crb.latin = "";
-            inf_crb.functions = "";
-            inf_crb.clinical_significance = "";
+            cerebellum = "crb_part";
+            inf_crb.structure = "crb_struct";
+            inf_crb.latin = "crb_lat";
+            inf_crb.functions = "crb_func";
+            inf_crb.clinical_significance = "crb_clinic";
         }
         public void Print(string str) { }
         public void Print_all_information() { }

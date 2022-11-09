@@ -14,11 +14,11 @@ namespace Brain
         public Forehead()
         {
             id=120;
-            forehead_part = "";
-            frh_inf.structure = "";
-            frh_inf.latin = "";
-            frh_inf.functions = "";
-            frh_inf.clinical_significance = "";
+            forehead_part = "frh_part";
+            frh_inf.structure = "frh_struct";
+            frh_inf.latin = "frh_lat";
+            frh_inf.functions = "frh_func";
+            frh_inf.clinical_significance = "frh_clinic";
         }
         public void Print(string str) { }
         public void Print_all_information() { }
