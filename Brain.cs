@@ -42,10 +42,16 @@ namespace Brain
         {
              cer = new Cerebellum();
              cr = new Crown();
+             fr = new Forehead();
+            occ = new Occiput();
+            tmp = new Temporal();
             brains = new List<Part>();
             {
                 brains.Add(cer);
                 brains.Add(cr);
+                brains.Add(fr);
+                brains.Add(occ);
+                brains.Add(tmp);
             }
         }
     }
