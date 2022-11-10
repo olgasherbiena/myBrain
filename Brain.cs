@@ -18,9 +18,17 @@ namespace Brain
         void Print(string str);
         void Print_all_information();
     }
-    public class Brain
+    public abstract class Part
     {
-        public struct parts // структура частин мозку (об'єктів їх класів)
+            public Crown cr;
+            public Cerebellum cer;
+            public Forehead fr;
+            public Occiput occ;
+            public Temporal tmp;
+    }
+    public class Brain:Part
+    {
+        /*public struct parts // структура частин мозку (об'єктів їх класів)
         {
             public Crown cr;
             public Cerebellum cer;
@@ -28,10 +36,17 @@ namespace Brain
             public Occiput occ;
             public Temporal tmp;
         }
-        public parts brain; // масив структури для впорядкування даних
+        public parts brain;*/ // масив структури для впорядкування даних
+        public List<Part> brains;
         public Brain()
         {
-        
+             cer = new Cerebellum();
+             cr = new Crown();
+            brains = new List<Part>();
+            {
+                brains.Add(cer);
+                brains.Add(cr);
+            }
         }
     }
 }
