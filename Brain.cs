@@ -27,11 +27,29 @@ namespace Brain
             public Forehead fr;
             public Occiput occ;
             public Temporal tmp;
+            public override string ToString()
+            {
+                return cr + " " + cer + " " + fr + " " + occ + " " + tmp ;
+            }
         }
         public parts brain; // масив структури для впорядкування даних
+        public List<parts> brains;
         public Brain()
         {
-            this.brain.cr.crown_part = "";
+
+            //this.brain.cr.crown_part = "";
+            this.brain.cr = new Crown();
+            this.brain.cer = new Cerebellum();
+            this.brain.fr = new Forehead();
+            this.brain.occ = new Occiput();
+            this.brain.tmp = new Temporal();
+            brains = new List<parts>();
+            brains.Add(brain);
+
+        }
+        public override string ToString()
+        {
+            return string.Format("This is brain {0}", brain.ToString());
         }
     }
 }

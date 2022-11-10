@@ -22,5 +22,10 @@ namespace Brain
         }
         public void Print(string str) { }
         public void Print_all_information() { }
+
+        public override string ToString()
+        {
+            return "Test " + this.forehead_part.ToString();
+        }
     }
 }
