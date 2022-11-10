@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Temporal:IPrint
+    public class Temporal:Part, IPrint
     {
         public int id;
         public information inf_tmp;
