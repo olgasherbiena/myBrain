@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Cerebellum:IPrint
+    public class Cerebellum:Part, IPrint
     {
         public int id;
         public information inf_crb;
