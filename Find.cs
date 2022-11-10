@@ -9,6 +9,6 @@ namespace Brain
     public class Find
     {
         public string find; // рядок по якому робтитимемо пошук
-        public void Find_information(string find_string, Brain.parts brain) { }  
+        public void Find_information(string find_string, Brain brain) { }  
     }
 }
