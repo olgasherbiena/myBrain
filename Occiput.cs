@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Occiput:IPrint
+    public class Occiput:Part, IPrint
     {
         public int id;
         public information inf_occ;
