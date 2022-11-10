@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Crown:IPrint
+    public class Crown:Part, IPrint
     {
         public int id;
         public information inf_crw;
