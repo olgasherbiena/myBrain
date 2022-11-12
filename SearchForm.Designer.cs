@@ -29,18 +29,19 @@ namespace Brain
         /// </summary>
         private void InitializeComponent()
         {
-            this.Search_request_textbox = new System.Windows.Forms.TextBox();
+            this.Search_textbox = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Search_request_textbox
+            // Search_textbox
             // 
-            this.Search_request_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.Search_request_textbox.Location = new System.Drawing.Point(45, 34);
-            this.Search_request_textbox.Name = "Search_request_textbox";
-            this.Search_request_textbox.Size = new System.Drawing.Size(398, 32);
-            this.Search_request_textbox.TabIndex = 0;
-            this.Search_request_textbox.TextChanged += new System.EventHandler(this.Search_request_textbox_TextChanged);
+            this.Search_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.Search_textbox.Location = new System.Drawing.Point(45, 34);
+            this.Search_textbox.Name = "Search_textbox";
+            this.Search_textbox.Size = new System.Drawing.Size(398, 32);
+            this.Search_textbox.TabIndex = 0;
+            this.Search_textbox.TextChanged += new System.EventHandler(this.Search_textbox_TextChanged);
             // 
             // listBox1
             // 
@@ -49,15 +50,25 @@ namespace Brain
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(398, 95);
             this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(154, 255);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 50);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Отримати інформацію про частину мозку";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 347);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.Search_request_textbox);
+            this.Controls.Add(this.Search_textbox);
             this.Name = "SearchForm";
             this.Text = "SearchForm";
             this.ResumeLayout(false);
@@ -67,7 +78,8 @@ namespace Brain
 
         #endregion
 
-        private System.Windows.Forms.TextBox Search_request_textbox;
+        private System.Windows.Forms.TextBox Search_textbox;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

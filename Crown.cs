@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Crown:IPrint
+    public class Crown:Part,IPrint
     {
-        public int id;
+        public const int id = 110;
         public information inf_crw;
         public string crown_part; // зберігається загальна інформація про тім'яну частину (та що одразу після заголовку)
         public string lateral_intraparietal_area;
@@ -17,7 +17,7 @@ namespace Brain
         public string front_intraparietal_area;
         public Crown()
         {
-            id=110;
+            //id;
             crown_part = "crw_part";
             inf_crw.structure = "crw_struct";
             inf_crw.latin = "crw_lat";
@@ -30,5 +30,10 @@ namespace Brain
         }
         public void Print(string str) { }
         public void Print_all_information() { }
+
+        public override string ToString()
+        {
+            return $"{id}; Name: {this.crown_part}; Latin: {this.inf_crw.latin}; Functions: {this.inf_crw.functions}";
+        }
     }
 }

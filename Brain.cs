@@ -18,38 +18,45 @@ namespace Brain
         void Print(string str);
         void Print_all_information();
     }
-    public class Brain
+    public abstract class Part
     {
-        public struct parts // структура частин мозку (об'єктів їх класів)
+        public Crown cr;
+        public Cerebellum cer;
+        public Forehead fr;
+        public Occiput occ;
+        public Temporal tmp;
+    }
+    public class Brain : Part
+    {
+        /*public struct parts // структура частин мозку (об'єктів їх класів)
         {
             public Crown cr;
             public Cerebellum cer;
             public Forehead fr;
             public Occiput occ;
             public Temporal tmp;
-            public override string ToString()
-            {
-                return cr + " " + cer + " " + fr + " " + occ + " " + tmp ;
-            }
         }
-        public parts brain; // масив структури для впорядкування даних
-        public List<parts> brains;
+        public parts brain;*/ // масив структури для впорядкування даних
+        public List<Part> brains;
         public Brain()
         {
-
-            //this.brain.cr.crown_part = "";
-            this.brain.cr = new Crown();
-            this.brain.cer = new Cerebellum();
-            this.brain.fr = new Forehead();
-            this.brain.occ = new Occiput();
-            this.brain.tmp = new Temporal();
-            brains = new List<parts>();
-            brains.Add(brain);
-
+            cer = new Cerebellum();
+            cr = new Crown();
+            fr = new Forehead();
+            occ = new Occiput();
+            tmp = new Temporal();
+            brains = new List<Part>();
+            {
+                brains.Add(cer);
+                brains.Add(cr);
+                brains.Add(fr);
+                brains.Add(occ);
+                brains.Add(tmp);
+            }
         }
         public override string ToString()
         {
-            return string.Format("This is brain {0}", brain.ToString());
+            return string.Format("This is brain {0}", brains.ToString());
         }
     }
 }

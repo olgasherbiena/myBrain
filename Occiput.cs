@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Occiput:IPrint
+    public class Occiput:Part, IPrint
     {
-        public int id;
+        public const int id = 102;
         public information inf_occ;
         public string occiput; // зберігається загальна інформація про потиличну частину (та що одразу після заголовку)
         public string first_functional_area;
@@ -16,7 +16,7 @@ namespace Brain
         public string dorsomedial_flow;
         public Occiput()
         {
-            id=102;
+            //id=102;
             occiput = "occ_part";
             inf_occ.structure = "occ_struct";
             inf_occ.latin = "occ_lat";
@@ -29,5 +29,10 @@ namespace Brain
         }
         public void Print(string str) { }
         public void Print_all_information() { }
+
+        public override string ToString()
+        {
+            return $"{id}; Name: {this.occiput}; Latin: {this.inf_occ.latin}; Functions: {this.inf_occ.functions}";
+        }
     }
 }

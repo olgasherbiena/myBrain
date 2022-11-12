@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public class Cerebellum:IPrint
+    public class Cerebellum:Part, IPrint
     {
-        public int id;
+        public const int id = 101;
         public information inf_crb;
         public string cerebellum; // зберігається загальна інформація про мозечок (та що одразу після заголовку)
         public Cerebellum()
         {
-            id=101;
+            //id=101;
             cerebellum = "crb_part";
             inf_crb.structure = "crb_struct";
             inf_crb.latin = "crb_lat";
@@ -25,7 +25,7 @@ namespace Brain
 
         public override string ToString()
         {
-            return "Test " + this.cerebellum.ToString();
+            return $"{id}; Name: {this.cerebellum}; Latin: {this.inf_crb.latin}; Functions: {this.inf_crb.functions}";
         }
     }
 }
