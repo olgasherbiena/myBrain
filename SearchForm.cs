@@ -33,33 +33,12 @@ namespace Brain
             temp.Find_information(Search_textbox.Text, listBox1); // Пошук інформації, який виділяє індекс знайденого елементу у listBox
 
         }
-        private Part GetPart(int id)
-        {
-            /* Цей метод повертає частину мозку, визначену id */
-           
-            switch (id)
-            {
-                case Crown.id:
-                    return new Crown();
-                case Cerebellum.id:
-                    return new Cerebellum();
-                case Forehead.id:
-                    return new Forehead();
-                case Occiput.id:
-                    return new Occiput();
-                
-                default:
-                    return new Temporal();
-            }
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             int selected_id = Convert.ToInt32(listBox1.SelectedItem.ToString().Substring(0, 3)); // Отримуємо id частини мозку, що є першими 3 символами рядка
-            Part temp_part = GetPart(selected_id);
-            // Console.WriteLine(temp_part);
 
             // TODO: Зробити форму з інформацією про частину, визначену у temp_part
-            Form info_form = new Form();
+            PartInfoForm info_form = new PartInfoForm(selected_id, br);
             info_form.Show();
         }
     }

@@ -26,6 +26,7 @@ namespace Brain
         public Occiput occ;
         public Temporal tmp;
     }
+    
     public class Brain : Part
     {
         /*public struct parts // структура частин мозку (об'єктів їх класів)

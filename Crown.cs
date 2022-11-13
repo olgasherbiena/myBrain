@@ -31,6 +31,8 @@ namespace Brain
         public void Print(string str) { }
         public void Print_all_information() { }
 
+        
+
         public override string ToString()
         {
             return $"{id}; Name: {this.crown_part}; Latin: {this.inf_crw.latin}; Functions: {this.inf_crw.functions}";

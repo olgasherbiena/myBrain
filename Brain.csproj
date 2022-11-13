@@ -46,6 +46,12 @@
     <Compile Include="Find.cs" />
     <Compile Include="JSON.cs" />
     <Compile Include="Occiput.cs" />
+    <Compile Include="PartInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartInfoForm.Designer.cs">
+      <DependentUpon>PartInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PartInfoForm.resx">
+      <DependentUpon>PartInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </EmbeddedResource>
