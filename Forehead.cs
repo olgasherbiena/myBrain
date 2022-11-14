@@ -9,11 +9,11 @@ namespace Brain
     public class Forehead:Part, IPrint
     {
         public int id;
-        public string forehead_part; // зберігається загальна інформація про лобову частину (та що одразу після заголовку)
+        public string forehead_name; // зберігається загальна інформація про лобову частину (та що одразу після заголовку)
         public Forehead()
         {
             id=120;
-            forehead_part = "";
+            forehead_name = "";
             structure = "";
             latin = "";
             functions = "";
