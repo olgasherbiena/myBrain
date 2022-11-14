@@ -9,7 +9,6 @@ namespace Brain
     public class Temporal:Part, IPrint
     {
         public int id;
-        public information inf_tmp;
         public string temporal_part; // зберігається загальна інформація про скроневу частину (та що одразу після заголовку)
         public struct touch_input_processing // обробка сенсорного введення
         {
@@ -22,13 +21,13 @@ namespace Brain
         {
             id=202;
             temporal_part = "";
-            inf_tmp.structure = "";
-            inf_tmp.latin = "";
-            inf_tmp.functions = "";
+            structure = "";
+            latin = "";
+            functions = "";
             function.otic = "";
             function.visual = "";
             function.speech_recognition = "";
-            inf_tmp.clinical_significance = "";
+            clinical_significance = "";
         }
         public void Print(string str) { }
         public void Print_all_information() { }
