@@ -9,16 +9,15 @@ namespace Brain
     public class Forehead:Part, IPrint
     {
         public int id;
-        public information frh_inf;
         public string forehead_part; // зберігається загальна інформація про лобову частину (та що одразу після заголовку)
         public Forehead()
         {
             id=120;
             forehead_part = "";
-            frh_inf.structure = "";
-            frh_inf.latin = "";
-            frh_inf.functions = "";
-            frh_inf.clinical_significance = "";
+            structure = "";
+            latin = "";
+            functions = "";
+            clinical_significance = "";
         }
         public void Print(string str) { }
         public void Print_all_information() { }
