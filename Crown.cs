@@ -9,7 +9,7 @@ namespace Brain
     public class Crown:Part, IPrint
     {
         public int id;
-        public string crown_part; // зберігається загальна інформація про тім'яну частину (та що одразу після заголовку)
+        public string crown_name; // зберігається загальна інформація про тім'яну частину (та що одразу після заголовку)
         public string lateral_intraparietal_area;
         public string ventral_intraparietal_area;
         public string medial_intraparietal_area;
