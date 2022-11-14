@@ -15,10 +15,10 @@ namespace Brain
         {
             id=101;
             cerebellum = "";
-            inf_crb.structure = "";
-            inf_crb.latin = "";
-            inf_crb.functions = "";
-            inf_crb.clinical_significance = "";
+            structure = "";
+            latin = "";
+            functions = "";
+            clinical_significance = "";
         }
         public void Print(string str) { }
         public void Print_all_information() { }
