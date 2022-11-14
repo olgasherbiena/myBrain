@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    public struct information // загальна структура даних
+    /*public struct information // загальна структура даних
     {
-        public string structure;
-        public string latin;
-        public string functions;
-        public string clinical_significance;
-    }
+        
+    }*/
     interface IPrint // інтерфейс, реалізацію якого пропишемо у класах
     {
         void Print(string str);
@@ -20,11 +17,10 @@ namespace Brain
     }
     public abstract class Part
     {
-            public Crown cr;
-            public Cerebellum cer;
-            public Forehead fr;
-            public Occiput occ;
-            public Temporal tmp;
+        public string structure;
+        public string latin;
+        public string functions;
+        public string clinical_significance;
     }
     public class Brain:Part
     {
@@ -40,11 +36,11 @@ namespace Brain
         public List<Part> brains;
         public Brain()
         {
-             cer = new Cerebellum();
-             cr = new Crown();
-             fr = new Forehead();
-            occ = new Occiput();
-            tmp = new Temporal();
+            Cerebellum cer = new Cerebellum();
+            Crown cr = new Crown();
+            Forehead fr = new Forehead();
+            Occiput occ = new Occiput();
+            Temporal tmp = new Temporal();
             brains = new List<Part>();
             {
                 brains.Add(cer);
