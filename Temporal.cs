@@ -9,7 +9,7 @@ namespace Brain
     public class Temporal:Part, IPrint
     {
         public int id;
-        public string temporal_part; // зберігається загальна інформація про скроневу частину (та що одразу після заголовку)
+        public string temporal_name; // зберігається загальна інформація про скроневу частину (та що одразу після заголовку)
         public struct touch_input_processing // обробка сенсорного введення
         {
             public string otic;
@@ -20,7 +20,7 @@ namespace Brain
         public Temporal()
         {
             id=202;
-            temporal_part = "";
+            temporal_name = "";
             structure = "";
             latin = "";
             functions = "";
