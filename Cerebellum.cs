@@ -9,8 +9,7 @@ namespace Brain
     public class Cerebellum:Part, IPrint
     {
         public int id;
-        public information inf_crb;
-        public string cerebellum; // зберігається загальна інформація про мозечок (та що одразу після заголовку)
+        public string cerebellum_name; // зберігається загальна інформація про мозечок (та що одразу після заголовку)
         public Cerebellum()
         {
             id=101;
