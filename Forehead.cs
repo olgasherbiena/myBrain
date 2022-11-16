@@ -9,23 +9,22 @@ namespace Brain
     public class Forehead:Part, IPrint
     {
         public const int id = 120;
-        public information inf_frh;
-        public string forehead_part; // зберігається загальна інформація про лобову частину (та що одразу після заголовку)
+        public string forehead_name; // зберігається загальна інформація про лобову частину (та що одразу після заголовку)
         public Forehead()
         {
             //id=120;
-            forehead_part = "frh_part";
-            inf_frh.structure = "frh_struct";
-            inf_frh.latin = "frh_lat";
-            inf_frh.functions = "frh_func";
-            inf_frh.clinical_significance = "frh_clinic";
+            forehead_name = "frh_part";
+            structure = "frh_struct";
+            latin = "frh_lat";
+            functions = "frh_func";
+            clinical_significance = "frh_clinic";
         }
         public void Print(string str) { }
         public void Print_all_information() { }
 
         public override string ToString()
         {
-            return $"{id}; Name: {this.forehead_part}; Latin: {this.inf_frh.latin}; Functions: {this.inf_frh.functions}";
+            return $"{id}; Name: {this.forehead_name}; Latin: {this.latin}; Functions: {this.functions}";
         }
     }
 }

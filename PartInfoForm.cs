@@ -45,23 +45,23 @@ namespace Brain
             Part temp = GetPart(selected_id);
             if (temp.GetType() == typeof(Crown)) // if (temp is Crown crown)
             {
-                label1.Text = brain.cr.crown_part;
+                label1.Text = brain.cr.crown_name;
             }
             else if (temp.GetType() == typeof(Cerebellum))
             {
-                label1.Text = brain.cer.cerebellum;
+                label1.Text = brain.cer.cerebellum_name;
             }
             else if (temp.GetType() == typeof(Forehead))
             {
-                label1.Text = brain.fr.forehead_part;
+                label1.Text = brain.fr.forehead_name;
             }
             else if (temp.GetType() == typeof(Occiput))
             {
-                label1.Text = brain.occ.occiput;
+                label1.Text = brain.occ.occiput_name;
             }
             else
             {
-                label1.Text = brain.tmp.temporal_part;
+                label1.Text = brain.tmp.temporal_name;
             }
 
 
