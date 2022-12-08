@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace Brain
 {
-    /*public struct information // загальна структура даних
-    {
-        
-    }*/
     interface IPrint // інтерфейс, реалізацію якого пропишемо у класах
     {
         void Print(string str);
@@ -17,30 +13,26 @@ namespace Brain
     }
     public abstract class Part
     {
-        public string structure;
-        public string latin;
-        public string functions;
-        public string clinical_significance;
+       public string structure;
+       public string latin;
+       public string functions;
+       public string clinical_significance;
     }
-    public class Brain:Part
+    public class Brain : Part
     {
-        /*public struct parts // структура частин мозку (об'єктів їх класів)
-        {
-            public Crown cr;
-            public Cerebellum cer;
-            public Forehead fr;
-            public Occiput occ;
-            public Temporal tmp;
-        }
-        public parts brain;*/ // масив структури для впорядкування даних
-        public List<Part> brains;
+        private Crown cr;
+        private Cerebellum cer;
+        private Forehead fr;
+        private Occiput occ;
+        private Temporal tmp;
+        private List<Part> brains;
         public Brain()
         {
-            Cerebellum cer = new Cerebellum();
-            Crown cr = new Crown();
-            Forehead fr = new Forehead();
-            Occiput occ = new Occiput();
-            Temporal tmp = new Temporal();
+            cer = new Cerebellum();
+            cr = new Crown();
+            fr = new Forehead();
+            occ = new Occiput();
+            tmp = new Temporal();
             brains = new List<Part>();
             {
                 brains.Add(cer);
@@ -49,6 +41,16 @@ namespace Brain
                 brains.Add(occ);
                 brains.Add(tmp);
             }
+        }
+        public List<Part> Brains { set { } get { return brains; } }
+        public Crown Cr { set { } get { return cr; } }
+        public Cerebellum Cer { set { } get { return cer; } }
+        public Forehead Fr { set { } get { return fr; } }
+        public Occiput Occ { set { } get { return occ; } }
+        public Temporal Tmp { set { } get { return tmp; } }
+    public override string ToString()
+        {
+            return string.Format("This is brain {0}", brains.ToString());
         }
     }
 }
