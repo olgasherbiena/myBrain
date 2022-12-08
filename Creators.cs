@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Creators // клас розробників
 {
@@ -13,10 +13,10 @@ class Creators // клас розробників
     Creators()
     {
         people = new student[5];
-        student.initials = "Name";
-        student.group_number = 100;
-        student.faculty = "Faculty";
-        student.task = "Task";
+       // student.initials = "Name";
+       // student.group_number = 100;
+       // student.faculty = "Faculty";
+       // student.task = "Task";
     }
     public void Print() { }
 }
