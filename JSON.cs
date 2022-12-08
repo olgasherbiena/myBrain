@@ -1,16 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.Json;
 
 namespace Brain
 {
     public class JSON
     {
-        public string filenameSerialize;
-        public string filenameDeserialize;
+        string filenameSerialize;
+        string filenameDeserialize;
         public JSON(string Serialize, string Deserialize)
         {
             filenameSerialize = Serialize;
